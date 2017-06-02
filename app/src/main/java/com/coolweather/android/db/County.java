@@ -3,6 +3,7 @@ package com.coolweather.android.db;
 import org.litepal.crud.DataSupport;
 
 /**
+ * 县级数据
  * Created by 侯彦兵 on 2017/6/2.
  */
 
@@ -10,7 +11,7 @@ public class County extends DataSupport {
     private int id;
     private String countyName;
     private String weatherId;
-    private String cityId;
+    private int cityId;
 
     public int getId() {
         return id;
@@ -36,11 +37,11 @@ public class County extends DataSupport {
         this.weatherId = weatherId;
     }
 
-    public String getCityId() {
+    public int getCityId() {
         return cityId;
     }
 
-    public void setCityId(String cityId) {
+    public void setCityId(int cityId) {
         this.cityId = cityId;
     }
 }
